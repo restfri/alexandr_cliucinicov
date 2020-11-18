@@ -12,7 +12,7 @@ use yii\console\Controller;
 class DbDataController extends Controller
 {
     public function actionInsertCountries()
-    {   /*fast solution for data prepare*/
+    {   /*fast solution for data prepare*/ echo '<pre>'; var_dump(123); die;
         $path = Yii::getAlias('@frontend/web/country_city.json');
         $data = json_decode(file_get_contents($path), true);
 
