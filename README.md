@@ -1,9 +1,12 @@
 Done console commands:
+```
 yii forecast/get-forecast 21.07.2018 23.07.2018
 yii db-data/insert-countries
-
+```
 Done DB migrations;
+
 Done Models for DB tables;
+
 Done nginx server;
 
 nginx
