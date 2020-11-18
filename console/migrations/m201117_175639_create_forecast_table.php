@@ -16,7 +16,7 @@ class m201117_175639_create_forecast_table extends Migration
             'id' => $this->primaryKey(),
             'city_id' => $this->integer(),
             'temperature' => $this->float(),
-            'when_created' => $this->dateTime(),
+            'when_created' => $this->text(),
         ]);
     }
 

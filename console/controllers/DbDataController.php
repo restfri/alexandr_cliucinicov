@@ -12,11 +12,10 @@ use yii\console\Controller;
 class DbDataController extends Controller
 {
     public function actionInsertCountries()
-    {
+    {   /*fast solution for data prepare*/
         $path = Yii::getAlias('@frontend/web/country_city.json');
         $data = json_decode(file_get_contents($path), true);
 
-        $models = [];
         foreach ($data as $country => $cities) {
             $countriesModel = new Countries();
             $countriesModel->name = $country;
