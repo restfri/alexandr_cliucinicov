@@ -15,7 +15,6 @@ class ForecastController extends Controller
     {
         $countries = Countries::find()
             ->innerJoinWith('cities')
-            ->where(['{{%countries}}.id' => 17]) /*Russia*/
             ->asArray()
             ->all()
         ;
